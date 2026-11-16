@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Columbia Fireflies</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #091723;
+      color: #f5f5e9;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    a:focus-visible {
+      outline: 3px solid #d0fc71;
+      outline-offset: 5px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .announcement {
+      padding: 10px;
+      background: #d0fc71;
+      color: #091723;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 25px 0;
+      border-bottom: 1px solid #354751;
+    }
+
+    .brand {
+      color: #d0fc71;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    nav a { padding: 5px 0; }
+
+    nav a:hover { color: #d0fc71; }
+
+    nav a[aria-current="page"] {
+      border-bottom: 2px solid #d0fc71;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      align-items: center;
+      gap: 50px;
+      padding: 75px 0;
+    }
+
+    .eyebrow {
+      color: #d0fc71;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 { line-height: 1.2; }
+
+    h1 {
+      margin: 15px 0 25px;
+      font-size: clamp(46px, 7vw, 84px);
+      letter-spacing: -2px;
+    }
+
+    h1 span { color: #d0fc71; }
+
+    h2 { font-size: 32px; }
+
+    p { color: #bac6cc; }
+
+    .button {
+      display: inline-block;
+      margin: 8px 10px 8px 0;
+      padding: 13px 22px;
+      border: 2px solid #d0fc71;
+      background: #d0fc71;
+      color: #091723;
+      font-weight: bold;
+    }
+
+    .button:hover { background: #e5ffb5; }
+
+    .button.secondary {
+      background: transparent;
+      color: #d0fc71;
+    }
+
+    .button.secondary:hover { background: #20332b; }
+
+    .hero-art {
+      padding: 55px 25px;
+      border: 1px solid #77974d;
+      border-radius: 150px 150px 12px 12px;
+      background: radial-gradient(circle, #334e39, #102431);
+      text-align: center;
+    }
+
+    .baseball {
+      display: block;
+      font-size: 120px;
+      line-height: 1.5;
+    }
+
+    .hero-art strong {
+      display: block;
+      color: #d0fc71;
+      font-size: 25px;
+      letter-spacing: 3px;
+    }
+
+    .hero-art p { margin-bottom: 0; }
+
+    .section {
+      padding: 55px 0;
+      border-top: 1px solid #354751;
+    }
+
+    .intro { max-width: 800px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      padding: 28px;
+      border: 1px solid #354751;
+      background: #102431;
+    }
+
+    .icon { font-size: 40px; }
+
+    .card h3 { font-size: 23px; }
+
+    .card a {
+      margin-top: auto;
+      color: #d0fc71;
+      font-weight: bold;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+
+    .mission {
+      padding: 35px;
+      border-left: 5px solid #d0fc71;
+      background: #1c302a;
+    }
+
+    .closing { text-align: center; }
+
+    footer {
+      padding: 25px 0;
+      border-top: 1px solid #354751;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    footer a {
+      color: #d0fc71;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 750px) {
+      .hero, .grid { grid-template-columns: 1fr; }
+      .hero { padding: 45px 0; gap: 30px; }
+      header { align-items: flex-start; }
+      nav { gap: 18px; font-size: 14px; }
+      .hero-art { padding: 30px 20px; }
+      .section { padding: 40px 0; }
+    }
+  </style>
+</head>
+
+<body id="top">
+  <div class="announcement">
+    A LITTLE BASEBALL. A LOT OF MEMORIES.
+  </div>
+
+  <header class="container">
+    <a class="brand" href="./index.html">
+      ✳ COLUMBIA FIREFLIES
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="./index.html" aria-current="page">Home</a>
+      <a href="./page2.html">Products &amp; Services</a>
+      <a href="./page3.html">About &amp; Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Baseball. Community. Good times.</p>
+
+        <h1 id="hero-title">
+          LIGHT UP<br>
+          YOUR <span>NIGHT.</span>
+        </h1>
+
+        <p>
+          Big cheers. Bright skies. Your favorite people.
+          Make your next night out a Fireflies night.
+        </p>
+
+        <a class="button" href="./page2.html">
+          Explore Our Offerings ↗
+        </a>
+
+        <a class="button secondary" href="./page3.html">
+          Meet the Team ↗
+        </a>
+      </div>
+
+      <div class="hero-art"
+           role="img"
+           aria-label="Baseball illustration celebrating Fireflies game nights">
+        <span class="baseball" aria-hidden="true">⚾</span>
+        <strong>WHERE THE NIGHT<br>COMES ALIVE</strong>
+        <p>For the fans. For the families. For Columbia.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="intro-title">
+      <div class="intro">
+        <p class="eyebrow">Welcome to Fireflies country</p>
+        <h2 id="intro-title">A ballgame is just the beginning.</h2>
+
+        <p>
+          Columbia Fireflies is our fictional business concept
+          offering baseball tickets, themed events, merchandise,
+          and group experiences. Designed for students, families,
+          and local fans, our offerings turn an ordinary evening
+          into a night worth cheering about.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="highlights-title">
+      <p class="eyebrow">Find your kind of fun</p>
+      <h2 id="highlights-title">Three ways to shine.</h2>
+
+      <div class="grid">
+        <article class="card">
+          <span class="icon" aria-hidden="true">⚾</span>
+          <h3>Game-Night Tickets</h3>
+          <p>
+            Pick your experience and bring your crew
+            for baseball, ballpark energy, and big cheers.
+          </p>
+          <a href="./page2.html#catalog">View Tickets →</a>
+        </article>
+
+        <article class="card">
+          <span class="icon" aria-hidden="true">✨</span>
+          <h3>Fireworks Family Deal</h3>
+          <p>
+            Four tickets for a fictional Fireworks Night
+            experience, all bundled for $40.
+          </p>
+          <a href="./page2.html#promo">Explore the Deal →</a>
+        </article>
+
+        <article class="card">
+          <span class="icon" aria-hidden="true">🎉</span>
+          <h3>Group Experiences</h3>
+          <p>
+            Make your next student gathering, celebration,
+            or team outing a Fireflies night.
+          </p>
+          <a href="./page2.html#groups">See Group Packages →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="mission-title">
+      <div class="mission">
+        <p class="eyebrow">Our mission</p>
+        <h2 id="mission-title">
+          Bring people together.<br>
+          Give them something to cheer for.
+        </h2>
+        <p>
+          Community, inclusion, and trust guide our
+          fictional business. Baseball is the backdrop.
+          Connection is the reason.
+        </p>
+      </div>
+    </section>
+
+    <section class="section closing">
+      <p class="eyebrow">Meet you under the lights</p>
+      <h2>Your people. Your city. Your night.</h2>
+
+      <a class="button" href="./page2.html">
+        Find Your Experience ↗
+      </a>
+
+      <a class="button secondary" href="./page3.html#contact">
+        Get in Touch ↗
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <p>
+      Student business concept. Not an official team website.<br>
+      All offers and prices are fictional. No live ticket sales.
+    </p>
+    <a href="#top">Back to Top ↑</a>
+  </footer>
+</body>
+</html>
